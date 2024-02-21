@@ -21,7 +21,7 @@ const projects = [
     sourceCode: "https://github.com/DongningLi/personal-webpage",
   },
   {
-    thumbnail: "",
+    thumbnail: "vr1family-screenshot.png",
     name: "VR1Family",
     description: [
       "Collaborate with classmates from SWE90016. VR1Family information system (for SPM assignment)",

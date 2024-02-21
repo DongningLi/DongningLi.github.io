@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    box-shadow: none;
+    box-sizing: border-box;
+  }
+
+  .project__detail {
+    width: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  
+  .project__detail__thumbnail {
+    width: 500px;
+    height: 500px;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }
+
+  .project__detail__name {
+    margin-top: 1rem;
+  }
+
+  .project__detail__description {
+    margin-top: 1rem;
+  }

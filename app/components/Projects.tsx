@@ -11,10 +11,9 @@ const Projects = () => {
     <section id="projects" className="section projects">
       {Spacer(1)}
       <h2 className="section__title">Projects</h2>
-
       <div className="projects__grid">
         {projects.map((project) => (
-          <ProjectCard key={uniqid()} project={project} />
+          <ProjectCard {...project}/>
         ))}
       </div>
     </section>
