@@ -23,7 +23,7 @@
   margin-right: 1.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .nav__list {
     background: white;
     display: none;
