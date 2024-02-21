@@ -1,3 +1,4 @@
 node_modules
-.next/cache
-*.gz
+next
+.env
+/.next/

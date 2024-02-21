@@ -3,6 +3,7 @@ import ProjectCard from "./ProjectCard";
 import Spacer from "./Spacer";
 import { projects } from "@/data/profiles";
 
+
 const Projects = () => {
   if (!projects.length) return null;
 

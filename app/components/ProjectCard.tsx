@@ -2,7 +2,14 @@ import uniqid from "uniqid";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Image from "next/image";
 
-const ProjectCard = ({ project }) => (
+interface projectType {
+  thumbnail: string;
+  name: string;
+  description: string[];
+  stack: string[];
+  sourceCode: string;
+}
+const ProjectCard:React.FC<{ project: projectType }> = ({ project }) => (
   <div className="project">
     <div>
       {project.thumbnail && (
@@ -19,7 +26,7 @@ const ProjectCard = ({ project }) => (
 
       {project.description && (
         <div className="project__description paragraph__list">
-          {project.description.map((item) => (
+          {project.description.map((item:string) => (
             <p key={uniqid()}>{item}</p>
           ))}
         </div>
@@ -29,7 +36,7 @@ const ProjectCard = ({ project }) => (
     <div>
       {project.stack && (
         <ul className="project__stack">
-          {project.stack.map((item) => (
+          {project.stack.map((item:string) => (
             <li key={uniqid()} className="project__stack-item">
               {item}
             </li>
