@@ -14,7 +14,7 @@ const about = {
 
 const projects = [
   {
-    thumbnail: "/images/portfolio.png",
+    thumbnail: "portfolio.png",
     name: "Portfolio",
     description: ["Portfolio based on Nextjs."],
     stack: ["Next.js", "React", "CSS"],
