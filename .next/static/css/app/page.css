@@ -1,0 +1,455 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./styles/index.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+  --navbar-height: 5rem;
+}
+
+body {
+  background-color: var(--clr-bg);
+  color: var(--clr-fg);
+}
+
+.light {
+  --clr-bg: #fcfcfc;
+  --clr-bg-alt: #fff;
+  --clr-fg: #555;
+  --clr-fg-alt: #444;
+  --clr-primary: #2978b5;
+  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.dark {
+  --clr-bg: #23283e;
+  --clr-bg-alt: #2a2f4c;
+  --clr-fg: #bdbddd;
+  --clr-fg-alt: #cdcdff;
+  --clr-primary: #90a0d9;
+  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.disable-scroll {
+  overflow-y: hidden;
+  touch-action: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+  color: var(--clr-fg-alt);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+}
+
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./styles/App.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+.app {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 5rem;
+}
+
+.section__title {
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+.paragraph__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.link {
+  color: var(--clr-primary);
+  padding: 0.3rem 0;
+  position: relative;
+}
+
+.link:hover {
+  color: var(--clr-primary);
+}
+
+.link::before {
+  content: "";
+  display: inline;
+  width: 0%;
+  height: 0.2rem;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--clr-primary);
+  transition: width 0.2s ease-in;
+}
+
+.link:hover::before,
+.link:focus::before {
+  width: 100%;
+}
+
+.link--nav {
+  color: var(--clr-fg);
+  /* text-transform: lowercase; */
+  font-weight: 500;
+}
+
+.link--icon {
+  color: var(--clr-fg);
+}
+
+.btn {
+  display: block;
+  cursor: pointer;
+  padding: 0.8rem 1.4rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn--outline {
+  color: var(--clr-primary);
+  border: 2px solid var(--clr-primary);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn--outline:hover,
+.btn--outline:focus {
+  color: var(--clr-bg);
+}
+
+.btn--outline:before {
+  content: "";
+  position: absolute;
+  background-color: var(--clr-primary);
+  right: 100%;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: right 0.2s ease-in-out;
+}
+
+.btn--outline:hover:before,
+.btn--outline:focus:before {
+  right: 0;
+}
+
+.btn--plain {
+  text-transform: initial;
+  background-color: var(--clr-bg-alt);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border: 0;
+}
+
+.btn--plain:hover {
+  transform: translateY(-4px);
+}
+
+.btn--icon {
+  padding: 0;
+}
+
+.btn--icon:hover,
+.btn--icon:focus {
+  color: var(--clr-primary);
+}
+
+.btn--icon:active {
+  transform: translateY(-5px);
+}
+
+.text--strong {
+  color: rgb(31, 81, 255);
+}
+
+/*!**************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./styles/About.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************/
+.about {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__pseudo-padding {
+  flex: 1;
+}
+
+.about__pseudo-padding-top {
+  min-height: 5rem;
+}
+
+.about__desc {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.about__contact {
+  justify-content: center;
+}
+
+.about__contact > * {
+  margin-right: 1rem;
+}
+
+.about__contact > *:last-child {
+  margin-right: 0;
+}
+
+.about__desc,
+.about__contact {
+  margin-top: 2.4rem;
+}
+
+@media (max-width: 600px) {
+  .about__pseudo-padding-top {
+    min-height: 3rem;
+  }
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./styles/Contact.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+.contact {
+  flex-direction: column;
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./styles/Footer.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+.footer {
+  padding: 3rem 0;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.footer__link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--clr-fg);
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./styles/Navbar.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+.nav {
+  height: var(--navbar-height);
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.nav__content {
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list {
+  margin-right: 1.5rem;
+  display: flex;
+}
+.nav__list-item {
+  margin-right: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .nav__list {
+    background: white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+  }
+
+  .nav__list-item {
+    margin: 0.5rem 0;
+  }
+
+  .nav__button {
+    z-index: 3;
+  }
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./styles/ProjectCard.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.project {
+  width: 100%;
+  padding: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project:hover {
+  transform: translateY(-7px);
+}
+
+.project__thumbnail {
+  width: 100%;
+  height: 150px;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.project__description {
+  margin-top: 1rem;
+}
+
+.project__stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.2rem 0;
+}
+
+.project__stack-item {
+  margin: 0.5rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--clr-fg-alt);
+}
+
+.project .link--icon {
+  margin-right: 0.5rem;
+}
+
+.project .link--icon:last-child {
+  margin-right: 0;
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./styles/Projects.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+.projects__grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-gap: 2rem;
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./styles/ScrollToTop.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 4rem;
+  background-color: transparent;
+}
+
+@media (max-width: 950px) {
+  .scroll-top {
+    display: none;
+  }
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./styles/Skills.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+.skills__list {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills__list-item {
+  margin: 0.5rem;
+}
+
+.skills__list-item:hover {
+  cursor: auto;
+}
+
