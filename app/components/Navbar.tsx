@@ -61,7 +61,7 @@ const Navbar = () => {
                 router.push('/Experience')
               }}
             >
-              <strong>Exprience</strong>
+              <strong>Experience</strong>
             </li>
           )}
         </ul>
