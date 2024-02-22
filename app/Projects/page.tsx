@@ -13,7 +13,7 @@ const Projects = () => {
 
   return (
     <div id="top" className="app">
-      {Spacer(2)}
+      {Spacer(1)}
       <Navbar />
 
       <h2 className="section__title">My Projects</h2>

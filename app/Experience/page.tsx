@@ -19,7 +19,7 @@ import '@/styles/Experience.css'
 function Experience() {
   return (
     <div id="top" className="app">
-      {Spacer(2)}
+      {Spacer(1)}
       <Navbar />
       <h2 className="section__title">Relevant Experience</h2>
 
