@@ -5,9 +5,9 @@ import Image from 'next/image'
 import Modal from 'react-modal'
 import { useSearchParams } from 'next/navigation'
 import { projects } from '@/data/profiles'
-import '@/styles/ProjectDetail.css'
 import { useRouter } from 'next/navigation'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
+import '@/styles/ProjectDetail.css'
 
 interface projectType {
   thumbnail: string

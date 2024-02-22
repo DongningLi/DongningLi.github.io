@@ -1,0 +1,20 @@
+.experienceTitle {
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: rgb(31, 81, 255);
+}
+
+.experiencePeriod {
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.experienceTask-item {
+    margin-bottom: 5px;
+    text-align: center;
+}

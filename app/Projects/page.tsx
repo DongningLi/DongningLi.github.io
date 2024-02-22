@@ -13,8 +13,9 @@ const Projects = () => {
 
   return (
     <div id="top" className="app">
+      {Spacer(2)}
       <Navbar />
-      {Spacer(1)}
+
       <h2 className="section__title">My Projects</h2>
       <div className="projects__grid">
         {projects.map((project) => (

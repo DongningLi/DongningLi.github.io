@@ -15,20 +15,10 @@ function About() {
       )}
 
       {course && (
-        <h1 className="about__role">
-          A student in {course} from {university}.
-        </h1>
+        <h2 className="about__role">
+          {course} from {university}
+        </h2>
       )}
-
-      <div className="">
-        {description && (
-          <div className="about__desc paragraph__list">
-            {description.map((item) => (
-              <p key={uniqid()}>{item}</p>
-            ))}
-          </div>
-        )}
-      </div>
 
       <div className="about__pseudo-padding" />
     </div>

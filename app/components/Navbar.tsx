@@ -4,14 +4,12 @@ import { useRouter } from 'next/navigation'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
 
-import { about, projects, skills, contact } from '@/data/profiles'
+import { projects, experience } from '@/data/profiles'
 
 const Navbar = () => {
   const [showNavList, setShowNavList] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const router = useRouter()
-
-  const { name } = about
 
   const toggleNavList = () => {
     if (showNavList) {
@@ -55,6 +53,17 @@ const Navbar = () => {
               <strong>Projects</strong>
             </li>
           )}
+
+          {experience.length && (
+            <li
+              className="nav__list-item"
+              onClick={() => {
+                router.push('/Experience')
+              }}
+            >
+              <strong>Exprience</strong>
+            </li>
+          )}
         </ul>
 
         <button
@@ -63,7 +72,7 @@ const Navbar = () => {
           className="btn btn--icon nav__button .nav.shadow"
           aria-label="toggle navigation"
         >
-          {showNavList ? <CloseIcon /> : <MenuIcon />}
+          {showNavList ? <CloseIcon /> : <MenuIcon fontSize="large" />}
         </button>
       </div>
     </nav>

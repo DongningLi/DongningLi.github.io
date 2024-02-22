@@ -15,7 +15,7 @@ const Contact = () => {
 
       <div className="about__contact center">
         <a href={`mailto:${contact.email}`} target="_blank" rel="noreferrer">
-          <EmailIcon />
+          <EmailIcon fontSize="large" />
         </a>
 
         {social && (
@@ -28,7 +28,7 @@ const Contact = () => {
                 aria-label="github"
                 className="link link--icon"
               >
-                <GitHubIcon />
+                <GitHubIcon fontSize="large" />
               </a>
             )}
 
@@ -40,7 +40,7 @@ const Contact = () => {
                 aria-label="linkedin"
                 className="link link--icon"
               >
-                <LinkedInIcon />
+                <LinkedInIcon fontSize="large" />
               </a>
             )}
           </>
