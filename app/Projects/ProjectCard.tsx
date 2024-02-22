@@ -3,6 +3,7 @@ import uniqid from "uniqid";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import "@/styles/ProjectCard.css";
 
 interface projectType {
   thumbnail: string;
@@ -40,7 +41,7 @@ function ProjectCard (project:projectType ){
           />
         )}
 
-        {project.name && <h3 onClick={() => {
+        {project.name && <h3 className="project__thumbnailName" onClick={() => {
           router.push("/ProjectDetail" + "?" + createQueryString("name",project.name))
         }}>{project.name}</h3>}
 

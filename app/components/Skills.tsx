@@ -1,9 +1,9 @@
-import uniqid from "uniqid";
-import Spacer from "./Spacer";
-import { skills } from "../../data/profiles";
+import uniqid from 'uniqid'
+import Spacer from './Spacer'
+import { skills } from '../../data/profiles'
 
 const Skills = () => {
-  if (!skills.length) return null;
+  if (!skills.length) return null
 
   return (
     <section className="section skills" id="skills">
@@ -17,7 +17,7 @@ const Skills = () => {
         ))}
       </ul>
     </section>
-  );
-};
+  )
+}
 
-export default Skills;
+export default Skills

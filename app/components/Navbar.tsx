@@ -1,80 +1,58 @@
-"use client";
-import { useState, useEffect } from "react";
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
+'use client'
+import { useState, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
+import MenuIcon from '@mui/icons-material/Menu'
+import CloseIcon from '@mui/icons-material/Close'
 
-import { about, projects, skills, contact } from "@/data/profiles";
+import { about, projects, skills, contact } from '@/data/profiles'
 
 const Navbar = () => {
-  const [showNavList, setShowNavList] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [showNavList, setShowNavList] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const router = useRouter()
 
-  const { name } = about;
+  const { name } = about
 
   const toggleNavList = () => {
     if (showNavList) {
-      document.body.classList.remove("disable-scroll");
-      setScrolled(true);
+      document.body.classList.remove('disable-scroll')
+      setScrolled(true)
     } else {
-      document.body.classList.add("disable-scroll");
-      setScrolled(false);
+      document.body.classList.add('disable-scroll')
+      setScrolled(false)
     }
-    setShowNavList(!showNavList);
-  };
+    setShowNavList(!showNavList)
+  }
 
   const hideNavList = () => {
-    document.body.classList.remove("disable-scroll");
-    setShowNavList(false);
-  };
+    document.body.classList.remove('disable-scroll')
+    setShowNavList(false)
+  }
 
   return (
     <nav className="center nav">
       <div className="nav__content">
         <ul
-          style={{ display: showNavList ? "flex" : "none" }}
+          style={{ display: showNavList ? 'contents' : 'none' }}
           className="nav__list"
         >
-          <li className="nav__list-item">
-            <strong>
-              <a href="#top" onClick={hideNavList} className="link">
-                {name || "About Me"}
-              </a>
-            </strong>
+          <li
+            className="nav__list-item"
+            onClick={() => {
+              router.push('/')
+            }}
+          >
+            <strong>About Me</strong>
           </li>
 
           {projects.length && (
-            <li className="nav__list-item">
-              <a
-                href="#projects"
-                onClick={hideNavList}
-                className="link link--nav"
-              >
-                Projects
-              </a>
-            </li>
-          )}
-
-          {skills.length && (
-            <li className="nav__list-item">
-              <a
-                href="#skills"
-                onClick={hideNavList}
-                className="link link--nav"
-              >
-                Skills
-              </a>
-            </li>
-          )}
-
-          {contact.email && (
-            <li className="nav__list-item">
-              <a
-                href="#contact"
-                onClick={hideNavList}
-                className="link link--nav"
-              >
-                Contact
-              </a>
+            <li
+              className="nav__list-item"
+              onClick={() => {
+                router.push('/Projects')
+              }}
+            >
+              <strong>Projects</strong>
             </li>
           )}
         </ul>
@@ -89,7 +67,7 @@ const Navbar = () => {
         </button>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

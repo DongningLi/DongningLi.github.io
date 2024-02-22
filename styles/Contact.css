@@ -1,3 +1,15 @@
 .contact {
   flex-direction: column;
 }
+
+about__contact {
+  justify-content: center;
+}
+
+.about__contact > * {
+  margin-right: 1rem;
+}
+
+.about__contact > *:last-child {
+  margin-right: 0;
+}

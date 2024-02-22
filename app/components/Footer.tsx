@@ -9,6 +9,6 @@ const Footer = () => (
       Modified from Ike Ofoegbu
     </a>
   </footer>
-);
+)
 
-export default Footer;
+export default Footer

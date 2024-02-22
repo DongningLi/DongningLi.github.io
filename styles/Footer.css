@@ -1,6 +1,5 @@
 .footer {
-  padding: 3rem 0;
-  margin-top: 4rem;
+  margin-top: 3rem;
   text-align: center;
 }
 
@@ -8,11 +7,4 @@
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--clr-fg);
-}
-
-@media (max-width: 600px) {
-  .footer {
-    padding: 2rem;
-    margin-top: 3rem;
-  }
 }

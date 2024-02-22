@@ -3,7 +3,6 @@
     margin: 0;
     border: 0;
     outline: 0;
-    background-color: inherit;
     color: inherit;
     font-family: inherit;
     box-shadow: none;
@@ -15,8 +14,6 @@
     padding: 2rem;
     margin: 0 auto;
     text-align: center;
-    box-shadow: var(--shadow);
-    transition: transform 0.2s linear;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -37,4 +34,9 @@
 
   .project__detail__description {
     margin-top: 1rem;
+  }
+
+  .project__detail_closeIcon:hover{
+    cursor: pointer;
+    align-self: right;
   }

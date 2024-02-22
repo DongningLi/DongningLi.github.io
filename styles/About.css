@@ -19,21 +19,8 @@
   text-align: left;
 }
 
-.about__contact {
-  justify-content: center;
-}
-
-.about__contact > * {
-  margin-right: 1rem;
-}
-
-.about__contact > *:last-child {
-  margin-right: 0;
-}
-
-.about__desc,
-.about__contact {
-  margin-top: 2.4rem;
+.about__desc {
+  margin-top: 2rem;
 }
 
 @media (max-width: 600px) {
