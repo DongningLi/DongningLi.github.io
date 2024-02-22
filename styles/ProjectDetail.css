@@ -18,7 +18,6 @@
     flex-direction: column;
     justify-content: space-between;
   }
-
   
   .project__detail__thumbnail {
     width: 500px;
@@ -36,7 +35,7 @@
     margin-top: 1rem;
   }
 
-  .project__detail_closeIcon:hover{
+  .project__detail_arrowBackIcon:hover{
     cursor: pointer;
     align-self: right;
   }

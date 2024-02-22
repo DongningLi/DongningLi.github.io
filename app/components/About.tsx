@@ -10,20 +10,13 @@ function About() {
 
       {name && (
         <h1 className="about__greeting">
-          Hey, I&apos;m <span className="text--strong">{name}</span>.
+          <span className="text--strong">{name}</span>
         </h1>
       )}
 
       {course && (
         <h1 className="about__role">
-          I&apos;m a student in {course}
-          {university && (
-            <span>
-              {' '}
-              at <span className="text--strong">{university}</span>
-            </span>
-          )}
-          .
+          A student in {course} from {university}.
         </h1>
       )}
 

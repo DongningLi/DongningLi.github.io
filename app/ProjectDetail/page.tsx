@@ -7,7 +7,7 @@ import { useSearchParams } from 'next/navigation'
 import { projects } from '@/data/profiles'
 import '@/styles/ProjectDetail.css'
 import { useRouter } from 'next/navigation'
-import CloseIcon from '@mui/icons-material/Close'
+import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 
 interface projectType {
   thumbnail: string
@@ -32,8 +32,8 @@ function ProjectDetail() {
         onRequestClose={() => router.push('/Projects')}
         contentLabel="Post modal"
       >
-        <CloseIcon
-          className="project__detail_closeIcon"
+        <ArrowBackIcon
+          className="project__detail_arrowBackIcon"
           onClick={() => {
             router.push('/Projects')
           }}
