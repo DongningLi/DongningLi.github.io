@@ -35,7 +35,7 @@ const projects = [
     sourceCode: 'https://github.com/DongningLi/vr1family-django',
   },
   {
-    thumbnail: '',
+    thumbnail: 'bachelorSystem.png',
     name: 'Management System',
     description: ['Bachelor graduation system based on SSH2.'],
     stack: ['SSH2', 'javascript', 'Database management'],
