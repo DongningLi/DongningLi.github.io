@@ -19,14 +19,14 @@ const about = {
 
 const projects = [
   {
-    thumbnail: 'portfolio.png',
+    thumbnail: './images/portfolio.png',
     name: 'Portfolio',
     description: ['Portfolio based on Nextjs.'],
     stack: ['Next.js', 'React', 'CSS'],
     sourceCode: 'https://github.com/DongningLi/personal-webpage',
   },
   {
-    thumbnail: 'vr1family-screenshot.png',
+    thumbnail: './images/vr1family-screenshot.png',
     name: 'VR1Family',
     description: [
       'Collaborate with classmates from SWE90016. VR1Family information system (for SPM assignment)',
@@ -35,7 +35,7 @@ const projects = [
     sourceCode: 'https://github.com/DongningLi/vr1family-django',
   },
   {
-    thumbnail: 'bachelorSystem.png',
+    thumbnail: './images/bachelorSystem.png',
     name: 'Management System',
     description: ['Bachelor graduation system based on SSH2.'],
     stack: ['SSH2', 'javascript', 'Database management'],

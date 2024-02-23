@@ -1,29 +1,27 @@
 'use client'
-import uniqid from "uniqid";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import Image from "next/image";
-import { useRouter } from "next/navigation";
-import "@/styles/ProjectCard.css";
+import uniqid from 'uniqid'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import Image from 'next/image'
+import { useRouter } from 'next/navigation'
+import '@/styles/ProjectCard.css'
 
 interface projectType {
-  thumbnail: string;
-  name: string;
-  description: string[];
-  stack: string[];
-  sourceCode: string;
+  thumbnail: string
+  name: string
+  description: string[]
+  stack: string[]
+  sourceCode: string
 }
 
-function ProjectCard (project:projectType ){
+function ProjectCard(project: projectType) {
+  const router = useRouter()
 
-  const router  = useRouter()
+  const createQueryString = (name: string, nameValue: string) => {
+    const params = new URLSearchParams()
+    params.set(name, nameValue)
 
-  const createQueryString = (name:string, nameValue:string) => {
-    const params = new URLSearchParams();
-    params.set(name, nameValue);
-
-    return params.toString();
-  };
-
+    return params.toString()
+  }
 
   return (
     <div className="project">
@@ -33,22 +31,33 @@ function ProjectCard (project:projectType ){
             className="project__thumbnail"
             src={project.thumbnail}
             alt="thumbnail"
-            width={100}
-            height={100}
-            onClick={()=>{
-              router.push("/ProjectDetail" + "?" + createQueryString("name",project.name))
+            width={250}
+            height={150}
+            onClick={() => {
+              router.push(
+                '/ProjectDetail' + '?' + createQueryString('name', project.name)
+              )
             }}
           />
         )}
 
-        {project.name && <h3 className="project__thumbnailName" onClick={() => {
-          router.push("/ProjectDetail" + "?" + createQueryString("name",project.name))
-        }}>{project.name}</h3>}
+        {project.name && (
+          <h3
+            className="project__thumbnailName"
+            onClick={() => {
+              router.push(
+                '/ProjectDetail' + '?' + createQueryString('name', project.name)
+              )
+            }}
+          >
+            {project.name}
+          </h3>
+        )}
 
         {project.description && (
           <div className="project__description paragraph__list">
-            {project.description.map((item:string) => (
-              <p key={uniqid()} >{item}</p>
+            {project.description.map((item: string) => (
+              <p key={uniqid()}>{item}</p>
             ))}
           </div>
         )}
@@ -57,7 +66,7 @@ function ProjectCard (project:projectType ){
       <div>
         {project.stack && (
           <ul className="project__stack">
-            {project.stack.map((item:string) => (
+            {project.stack.map((item: string) => (
               <li key={uniqid()} className="project__stack-item">
                 {item}
               </li>
@@ -78,6 +87,7 @@ function ProjectCard (project:projectType ){
         )}
       </div>
     </div>
-)};
+  )
+}
 
-export default ProjectCard;
+export default ProjectCard
