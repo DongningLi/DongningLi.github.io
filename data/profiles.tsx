@@ -23,7 +23,7 @@ const projects = [
     name: 'Portfolio',
     description: ['Portfolio based on Nextjs.'],
     stack: ['Next.js', 'React', 'CSS'],
-    sourceCode: 'https://github.com/DongningLi/personal-webpage',
+    sourceCode: 'https://github.com/DongningLi/DongningLi.github.io',
   },
   {
     thumbnail: './images/vr1family-screenshot.png',
