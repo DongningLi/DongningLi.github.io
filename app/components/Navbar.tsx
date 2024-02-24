@@ -12,13 +12,6 @@ const Navbar = () => {
   const router = useRouter()
 
   const toggleNavList = () => {
-    if (showNavList) {
-      document.body.classList.remove('disable-scroll')
-      setScrolled(true)
-    } else {
-      document.body.classList.add('disable-scroll')
-      setScrolled(false)
-    }
     setShowNavList(!showNavList)
   }
 
