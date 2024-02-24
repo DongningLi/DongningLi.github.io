@@ -8,16 +8,10 @@ import { projects, experience } from '@/data/profiles'
 
 const Navbar = () => {
   const [showNavList, setShowNavList] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
   const router = useRouter()
 
   const toggleNavList = () => {
     setShowNavList(!showNavList)
-  }
-
-  const hideNavList = () => {
-    document.body.classList.remove('disable-scroll')
-    setShowNavList(false)
   }
 
   return (
