@@ -29,7 +29,7 @@ function ProjectCard(project: projectType) {
         {project.thumbnail && (
           <Image
             className="project__thumbnail"
-            src={project.thumbnail}
+            src={project.thumbnail[0]}
             alt="thumbnail"
             width={250}
             height={150}

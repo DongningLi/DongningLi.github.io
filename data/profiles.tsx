@@ -19,14 +19,24 @@ const about = {
 
 const projects = [
   {
-    thumbnail: './images/portfolio.png',
+    thumbnail: [
+      './images/portfolio1.png',
+      './images/portfolio2.png',
+      './images/portfolio3.png',
+    ],
+    thumbnailDescription: ['Index Page', 'Projects Page', 'Experience Page'],
     name: 'Portfolio',
     description: ['Portfolio based on Nextjs.'],
     stack: ['Next.js', 'React', 'CSS'],
     sourceCode: 'https://github.com/DongningLi/DongningLi.github.io',
   },
   {
-    thumbnail: './images/vr1family-screenshot.png',
+    thumbnail: [
+      './images/vr1family-screenshot1.png',
+      './images/vr1family-screenshot2.png',
+      './images/vr1family-screenshot3.png',
+    ],
+    thumbnailDescription: ['Admin Page', 'Form Page', 'Detail Page'],
     name: 'VR1Family',
     description: [
       'Collaborate with classmates from SWE90016. VR1Family information system (for SPM assignment)',
@@ -35,7 +45,16 @@ const projects = [
     sourceCode: 'https://github.com/DongningLi/vr1family-django',
   },
   {
-    thumbnail: './images/bachelorSystem.png',
+    thumbnail: [
+      './images/bachelorSystem1.png',
+      './images/bachelorSystem2.png',
+      './images/bachelorSystem3.png',
+    ],
+    thumbnailDescription: [
+      'Index Page',
+      'Search Information Page',
+      'Forum Page',
+    ],
     name: 'Management System',
     description: ['Bachelor graduation system based on SSH2.'],
     stack: ['SSH2', 'javascript', 'Database management'],

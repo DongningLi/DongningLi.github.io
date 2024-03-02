@@ -9,6 +9,8 @@ import { useRouter } from 'next/navigation'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import '@/styles/ProjectDetail.css'
 import { Suspense } from 'react'
+import { Carousel } from 'react-responsive-carousel'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 interface projectType {
   thumbnail: string
@@ -39,13 +41,50 @@ function Search() {
       <div className="project__detail">
         <div>
           {project.thumbnail && (
-            <Image
-              className="project__detail__thumbnail"
-              src={project.thumbnail}
-              alt="thumbnail"
-              width={500}
-              height={500}
-            />
+            <Carousel>
+              <div>
+                <Image
+                  className="project__detail__thumbnail"
+                  src={project.thumbnail[0]}
+                  alt="thumbnail"
+                  width={500}
+                  height={500}
+                />
+                <p className="legend">
+                  {project.thumbnailDescription
+                    ? project.thumbnailDescription[0]
+                    : ''}
+                </p>
+              </div>
+              <div>
+                <Image
+                  className="project__detail__thumbnail"
+                  src={project.thumbnail[1]}
+                  alt="thumbnail"
+                  width={500}
+                  height={500}
+                />
+                <p className="legend">
+                  {project.thumbnailDescription
+                    ? project.thumbnailDescription[1]
+                    : ''}
+                </p>
+              </div>
+              <div>
+                <Image
+                  className="project__detail__thumbnail"
+                  src={project.thumbnail[2]}
+                  alt="thumbnail"
+                  width={500}
+                  height={500}
+                />
+                <p className="legend">
+                  {project.thumbnailDescription
+                    ? project.thumbnailDescription[2]
+                    : ''}
+                </p>
+              </div>
+            </Carousel>
           )}
 
           {project.name && (
