@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation'
 import '@/styles/ProjectCard.css'
 
 interface projectType {
-  thumbnail: string
+  thumbnail: string[]
   name: string
   description: string[]
   stack: string[]
