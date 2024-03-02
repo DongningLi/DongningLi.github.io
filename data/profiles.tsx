@@ -66,15 +66,14 @@ const skills = [
   'Next.js',
   'HTML',
   'CSS',
+  'SASS',
   'JavaScript',
   'Firebase',
-  'PHP',
-  'SASS',
-  'Material UI',
+  'BI System',
   'Database',
+  'PHP',
   'Git',
   'Cyber Security',
-  'BI System',
   'Project Management',
 ]
 
