@@ -9,18 +9,17 @@ import ListItemAvatar from '@mui/material/ListItemAvatar'
 import { experience } from '@/data/profiles'
 import uniqid from 'uniqid'
 import Spacer from '../components/Spacer'
-import Navbar from '../components/Navbar'
+import Navbar_mui from '../components/Navbar_MUI'
 
 import '@/styles/index.css'
 import '@/styles/App.css'
-import '@/styles/Navbar.css'
 import '@/styles/Experience.css'
 
 function Experience() {
   return (
     <div id="top" className="app">
+      <Navbar_mui />
       {Spacer(1)}
-      <Navbar />
       <h2 className="section__title">Relevant Experience</h2>
 
       <div className="experience">

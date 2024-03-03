@@ -1,9 +1,8 @@
-import uniqid from 'uniqid'
 import ProjectCard from './ProjectCard'
 import Spacer from '../components/Spacer'
 import { projects } from '@/data/profiles'
-import Navbar from '../components/Navbar'
-import '@/styles/Navbar.css'
+import Navbar_mui from '../components/Navbar_MUI'
+
 import '@/styles/Projects.css'
 import '@/styles/index.css'
 import '@/styles/App.css'
@@ -13,9 +12,8 @@ const Projects = () => {
 
   return (
     <div id="top" className="app">
+      <Navbar_mui />
       {Spacer(1)}
-      <Navbar />
-
       <h2 className="section__title">My Projects</h2>
       <div className="projects__grid">
         {projects.map((project) => (

@@ -1,20 +1,22 @@
 import About from './components/About'
-import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
+import { StyledEngineProvider } from '@mui/material/styles'
+import Navbar_mui from './components/Navbar_MUI'
 import '../styles/index.css'
 import '../styles/App.css'
 import '../styles/About.css'
 import '../styles/Skills.css'
 import '../styles/Contact.css'
 import '../styles/Footer.css'
-import '../styles/Navbar.css'
 
 function Home() {
   return (
     <div id="top" className="app">
-      <Navbar />
+      <StyledEngineProvider injectFirst>
+        <Navbar_mui />
+      </StyledEngineProvider>
       <main>
         <About />
         <div className="">
