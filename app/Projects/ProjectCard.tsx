@@ -2,7 +2,7 @@
 
 //external import
 import uniqid from 'uniqid'
-import { Button, Stack, CardMedia, CardContent, Card, Box } from '@mui/material'
+import { Button, Stack, CardContent, Card, Box } from '@mui/material'
 
 //internal import
 import { useRouter } from 'next/navigation'
@@ -58,7 +58,7 @@ function ProjectCard(project: projectType) {
           <span className="project-tag-stack">
             {project.stack.map((item: string) => (
               <p key={uniqid()} className="project__stack-item">
-                <Button variant="outlined" color="secondary">
+                <Button variant="outlined" color="secondary" className='projectCard-item-btn'>
                   {item}
                 </Button>
               </p>

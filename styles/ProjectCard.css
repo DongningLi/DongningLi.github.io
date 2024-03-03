@@ -8,7 +8,6 @@
   border: dashed;
 }
 
-
 .project__description {
   margin-top: 1rem;
 }
@@ -31,6 +30,11 @@
   margin: 0.5rem;
   font-weight: 500;
   font-size: 0.8rem;
+}
+
+.projectCard-item-btn:hover{
+  cursor:auto;
+  background-color: transparent;
 }
 
 .projectCardText {
