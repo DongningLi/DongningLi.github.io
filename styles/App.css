@@ -9,10 +9,6 @@ main {
   margin: 0 auto;
 }
 
-.section {
-  padding-top: 3rem;
-}
-
 .section__title {
   color: rgb(220, 179, 16);
   text-align: center;

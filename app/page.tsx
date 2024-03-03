@@ -1,14 +1,11 @@
 import About from './components/About'
 import Footer from './components/Footer'
-import Skills from './components/Skills'
-import Contact from './components/Contact'
+import Projects from './Projects/page'
 import { StyledEngineProvider } from '@mui/material/styles'
 import Navbar_mui from './components/Navbar_MUI'
 import '../styles/index.css'
 import '../styles/App.css'
 import '../styles/About.css'
-import '../styles/Skills.css'
-import '../styles/Contact.css'
 import '../styles/Footer.css'
 
 function Home() {
@@ -20,11 +17,9 @@ function Home() {
       <main>
         <About />
         <div className="">
-          <Skills />
-          <Contact />
+          <Projects />
         </div>
       </main>
-
       <Footer />
     </div>
   )

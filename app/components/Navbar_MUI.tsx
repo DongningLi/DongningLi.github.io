@@ -15,7 +15,7 @@ import MenuItem from '@mui/material/MenuItem'
 import { useRouter } from 'next/navigation'
 
 //internal import
-import { projects, experience, skills, contact } from '@/data/profiles'
+import { experience, skills, contact } from '@/data/profiles'
 
 function Navbar_mui() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null)
@@ -87,15 +87,6 @@ function Navbar_mui() {
                 <Typography textAlign="center">About Me</Typography>
               </MenuItem>
 
-              {projects.length && (
-                <MenuItem
-                  onClick={() => {
-                    router.push('/Projects')
-                  }}
-                >
-                  <Typography textAlign="center">Projects</Typography>
-                </MenuItem>
-              )}
               {experience.length && (
                 <MenuItem
                   onClick={() => {
@@ -113,6 +104,16 @@ function Navbar_mui() {
                   }}
                 >
                   <Typography textAlign="center">Skills</Typography>
+                </MenuItem>
+              )}
+
+              {contact && (
+                <MenuItem
+                  onClick={() => {
+                    router.push('/Contact')
+                  }}
+                >
+                  <Typography textAlign="center">Contact</Typography>
                 </MenuItem>
               )}
             </Menu>
@@ -143,16 +144,6 @@ function Navbar_mui() {
             >
               About Me
             </Button>
-            {projects.length && (
-              <Button
-                onClick={() => {
-                  router.push('/Experience')
-                }}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                Projects
-              </Button>
-            )}
 
             {experience.length && (
               <Button
@@ -173,6 +164,17 @@ function Navbar_mui() {
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 Skills
+              </Button>
+            )}
+
+            {contact && (
+              <Button
+                onClick={() => {
+                  router.push('/Contact')
+                }}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+                Contact
               </Button>
             )}
           </Box>
