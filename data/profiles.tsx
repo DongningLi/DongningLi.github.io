@@ -1,10 +1,7 @@
 const about = {
   greeting: 'Hi!',
   name: 'Dongning Li',
-  description: [
-    'Developer for Web & BI',
-    'Adept in Next.js, Firebase, and Database Warehousing',
-  ],
+  description: ['Developer for Web & BI'],
   social: {
     resume: './files/resume.pdf',
     linkedin: 'https://www.linkedin.com/in/dongningli/',
@@ -68,7 +65,6 @@ const skills = [
   'Database',
   'PHP',
   'Git',
-  'Cyber Security',
   'Project Management',
 ]
 

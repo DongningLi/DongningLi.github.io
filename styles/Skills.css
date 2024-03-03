@@ -1,3 +1,6 @@
+.section.skills{
+  max-width: 100vb;
+}
 .skills__list {
   margin: 0 auto;
   display: flex;
