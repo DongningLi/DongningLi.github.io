@@ -12,6 +12,18 @@ const about = {
 const projects = [
   {
     thumbnail: [
+      './images/portfolio1.png',
+      './images/portfolio2.png',
+      './images/portfolio3.png',
+    ],
+    thumbnailDescription: ['Index Page', 'Projects Page', 'Experience Page'],
+    name: 'Portfolio',
+    description: ['Portfolio based on Nextjs.'],
+    stack: ['Next.js', 'React', 'CSS'],
+    sourceCode: 'https://github.com/DongningLi/DongningLi.github.io',
+  },
+  {
+    thumbnail: [
       './images/vr1family-screenshot1.png',
       './images/vr1family-screenshot2.png',
       './images/vr1family-screenshot3.png',
@@ -23,18 +35,6 @@ const projects = [
     ],
     stack: ['Python', 'Agile', 'Django'],
     sourceCode: 'https://github.com/DongningLi/vr1family-django',
-  },
-  {
-    thumbnail: [
-      './images/portfolio1.png',
-      './images/portfolio2.png',
-      './images/portfolio3.png',
-    ],
-    thumbnailDescription: ['Index Page', 'Projects Page', 'Experience Page'],
-    name: 'Portfolio',
-    description: ['Portfolio based on Nextjs.'],
-    stack: ['Next.js', 'React', 'CSS'],
-    sourceCode: 'https://github.com/DongningLi/DongningLi.github.io',
   },
   {
     thumbnail: [

@@ -1,11 +1,10 @@
-.projectCard-div {
+.projectCard-card {
   width: 80vw;
-
-  flex-direction: column;
-  justify-content: center;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3vh;
+  border: dashed;
 }
 
 
@@ -13,10 +12,12 @@
   margin-top: 1rem;
 }
 
-.project__stack {
+.project-title-stack {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+}
+.project-tag-stack {
+  display: flex;
 
 }
 
@@ -24,6 +25,21 @@
   margin: 0.5rem;
   font-weight: 500;
   font-size: 0.8rem;
+}
+
+.projectCardMedia {
+  width: 30vw; 
+}
+
+.projectCardText {
+  flex-grow: 1;
+  padding-left: 30px;
+}
+
+.projectCardButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px; 
 }
 
 

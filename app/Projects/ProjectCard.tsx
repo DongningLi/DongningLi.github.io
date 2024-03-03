@@ -2,10 +2,7 @@
 
 //external import
 import uniqid from 'uniqid'
-import Card from '@mui/material/Card'
-import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
-import { Button, CardActionArea, CardActions } from '@mui/material'
+import { Button, Stack, CardMedia, CardContent, Card } from '@mui/material'
 
 //internal import
 import { useRouter } from 'next/navigation'
@@ -30,51 +27,68 @@ function ProjectCard(project: projectType) {
   }
 
   return (
-    <Card className="projectCard-div">
-      <CardMedia component="img" height="500vh" image={project.thumbnail[0]} />
-      <CardContent>
-        <h2>{project.name}</h2>
+    <Card
+      className="projectCard-card"
+      variant="outlined"
+      sx={{
+        backgroundImage: project.thumbnail[0],
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: 200,
+        position: 'relative',
+      }}
+    >
+      <CardMedia
+        component="img"
+        image={project.thumbnail[0]}
+        className="projectCardMedia"
+      />
+      <CardContent className="projectCardText">
+        <Stack direction="row" spacing={2} className="project-title-stack">
+          <h2>{project.name}</h2>
+          <span className="project-tag-stack">
+            {project.stack.map((item: string) => (
+              <p key={uniqid()} className="project__stack-item">
+                <Button variant="outlined" color="secondary">
+                  {item}
+                </Button>
+              </p>
+            ))}
+          </span>
+        </Stack>
 
         {project.description && (
           <div className="project__description paragraph__list">
             {project.description.map((item: string) => (
-              <p key={uniqid()}>{item}</p>
+              <h5 key={uniqid()}>{item}</h5>
             ))}
           </div>
         )}
 
-        {project.stack && (
-          <ul className="project__stack">
-            {project.stack.map((item: string) => (
-              <li key={uniqid()} className="project__stack-item">
-                {item}
-              </li>
-            ))}
-          </ul>
-        )}
-
-        <Button
-          size="small"
-          color="primary"
-          className="viewMore"
-          onClick={() => {
-            router.push(
-              '/ProjectDetail' + '?' + createQueryString('name', project.name)
-            )
-          }}
-        >
-          View More
-        </Button>
-        <Button
-          size="small"
-          color="primary"
-          className="viewCode"
-          href={project.sourceCode}
-          target="_blank"
-          rel="noreferrer"
-        >
-          VIEW CODE
-        </Button>
+        <div className="projectCardButtons">
+          <Button
+            size="large"
+            color="primary"
+            className="viewMore"
+            onClick={() => {
+              router.push(
+                '/ProjectDetail' + '?' + createQueryString('name', project.name)
+              )
+            }}
+          >
+            View More
+          </Button>
+          <Button
+            size="large"
+            color="primary"
+            className="viewCode"
+            href={project.sourceCode}
+            target="_blank"
+            rel="noreferrer"
+          >
+            VIEW CODE
+          </Button>
+        </div>
       </CardContent>
     </Card>
   )
