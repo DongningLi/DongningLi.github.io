@@ -22,7 +22,7 @@ const projects = [
       'A website showcasing about myself built using Next.js',
       'Updating daily',
     ],
-    stack: ['Next.js', 'React', 'CSS', 'MUI'],
+    stack: ['Next.js', 'TypeScript', 'CSS'],
     sourceCode: 'https://github.com/DongningLi/DongningLi.github.io',
   },
   {
