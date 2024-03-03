@@ -15,7 +15,7 @@ import MenuItem from '@mui/material/MenuItem'
 import { useRouter } from 'next/navigation'
 
 //internal import
-import { projects, experience, contact } from '@/data/profiles'
+import { projects, experience } from '@/data/profiles'
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null)
@@ -106,16 +106,6 @@ function Navbar() {
                   <Typography textAlign="center">Experience</Typography>
                 </MenuItem>
               )}
-
-              {contact && (
-                <MenuItem
-                  onClick={() => {
-                    router.push('/Contact')
-                  }}
-                >
-                  <Typography textAlign="center">Contact</Typography>
-                </MenuItem>
-              )}
             </Menu>
           </Box>
           <Typography
@@ -164,17 +154,6 @@ function Navbar() {
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 Experience
-              </Button>
-            )}
-
-            {contact && (
-              <Button
-                onClick={() => {
-                  router.push('/Contact')
-                }}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                Contact
               </Button>
             )}
           </Box>
