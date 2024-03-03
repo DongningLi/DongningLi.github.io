@@ -2,7 +2,7 @@
 
 //external import
 import uniqid from 'uniqid'
-import { Button, Stack, CardMedia, CardContent, Card, Box } from '@mui/material'
+import { Button, Stack, CardMedia, CardContent, Card } from '@mui/material'
 
 //internal import
 import { useRouter } from 'next/navigation'
@@ -29,32 +29,23 @@ function ProjectCard(project: projectType) {
   return (
     <Card
       className="projectCard-card"
+      variant="outlined"
       sx={{
+        backgroundImage: project.thumbnail[0],
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: 200,
         position: 'relative',
-        borderRadius: '10px',
       }}
     >
-      <Box
-        sx={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundImage: `url(${project.thumbnail[0]})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          opacity: 0.2,
-        }}
+      <CardMedia
+        component="img"
+        image={project.thumbnail[0]}
+        className="projectCardMedia"
       />
-      <CardContent
-        className="projectCardText"
-        sx={{
-          backgroundColor: 'transparent',
-        }}
-      >
-        <h2 className="projectCard-name">{project.name}</h2>
-        <Stack direction="row" spacing={2} className="project-keyword-stack">
+      <CardContent className="projectCardText">
+        <Stack direction="row" spacing={2} className="project-title-stack">
+          <h2>{project.name}</h2>
           <span className="project-tag-stack">
             {project.stack.map((item: string) => (
               <p key={uniqid()} className="project__stack-item">

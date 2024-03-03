@@ -1,5 +1,6 @@
 .projectCard-card {
-  width: 80vw;
+  width: 90vw;
+  height: 25vh;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -12,9 +13,14 @@
   margin-top: 1rem;
 }
 
-.project-title-stack {
+.projectCard-name{
+  text-align: center;
+  color:black
+}
+
+.project-keyword-stack {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .project-tag-stack {
   display: flex;
@@ -27,19 +33,15 @@
   font-size: 0.8rem;
 }
 
-.projectCardMedia {
-  width: 30vw; 
-}
-
 .projectCardText {
   flex-grow: 1;
   padding-left: 30px;
 }
 
 .projectCardButtons {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 15px; 
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 

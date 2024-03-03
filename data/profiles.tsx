@@ -18,8 +18,11 @@ const projects = [
     ],
     thumbnailDescription: ['Index Page', 'Projects Page', 'Experience Page'],
     name: 'Portfolio',
-    description: ['Portfolio based on Nextjs.'],
-    stack: ['Next.js', 'React', 'CSS'],
+    description: [
+      'A website showcasing about myself built using Next.js',
+      'Updating daily',
+    ],
+    stack: ['Next.js', 'React', 'CSS', 'MUI'],
     sourceCode: 'https://github.com/DongningLi/DongningLi.github.io',
   },
   {
@@ -31,7 +34,8 @@ const projects = [
     thumbnailDescription: ['Admin Page', 'Form Page', 'Detail Page'],
     name: 'VR1Family',
     description: [
-      'Collaborate with classmates from SWE90016. VR1Family information system (for SPM assignment)',
+      'Admin webpage for managing user requirements using Django and python',
+      'Collaborate with classmates from SWE90016 of UniMelb',
     ],
     stack: ['Python', 'Agile', 'Django'],
     sourceCode: 'https://github.com/DongningLi/vr1family-django',
@@ -48,8 +52,11 @@ const projects = [
       'Forum Page',
     ],
     name: 'Management System',
-    description: ['Bachelor graduation system based on SSH2.'],
-    stack: ['SSH2', 'javascript', 'Database management'],
+    description: [
+      'Management system, including login, form and CRUD operations, based on SSH2 ',
+      'Undegraduate graduation thesis',
+    ],
+    stack: ['SSH2', 'Javascript', 'JAVA'],
     sourceCode: 'https://github.com/DongningLi/bachelorGraduation/tree/master',
   },
 ]
