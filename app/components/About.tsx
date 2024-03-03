@@ -1,27 +1,42 @@
-import { about } from '@/data/profiles'
-import uniqid from 'uniqid'
+//external import
+import Typography from '@mui/material/Typography'
+import CardContent from '@mui/material/CardContent'
 
-const { name, university, course, description } = about
+// internal import
+import Links from './Links'
+import Spacer from './Spacer'
+import { about } from '@/data/profiles'
+import '@/styles/About.css'
+
+const { greeting, name, description } = about
 
 function About() {
   return (
-    <div className="about">
-      <div className="about__pseudo-padding about__pseudo-padding-top" />
+    <CardContent className="card-content">
+      <Typography variant="h1" align="center" className="greeting">
+        {greeting}
+        {" I'm "}
+        {name}
+      </Typography>
+      {Spacer(1)}
 
-      {name && (
-        <h1 className="about__greeting">
-          <span className="text--strong">{name}</span>
-        </h1>
-      )}
+      <Typography variant="h2" align="center" className="title">
+        {description[0]}
+      </Typography>
+      {Spacer(1)}
 
-      {course && (
-        <h2 className="about__role">
-          {course} from {university}
-        </h2>
-      )}
+      <Typography
+        variant="h5"
+        color="primary"
+        align="center"
+        className="subtitle"
+      >
+        {description[1]}
+      </Typography>
+      {Spacer(2)}
 
-      <div className="about__pseudo-padding" />
-    </div>
+      <Links />
+    </CardContent>
   )
 }
 

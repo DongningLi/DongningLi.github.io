@@ -1,15 +1,9 @@
 const about = {
+  greeting: 'Hi!',
   name: 'Dongning Li',
-  university: 'University of Melbourne',
-  course: 'Master of IT',
   description: [
-    {
-      position: 'Master of IT',
-      period: 'Feb 2023 - Now',
-      Tasks: [
-        'Projects for AI process in python with agile: algorithms implementation, software project',
-      ],
-    },
+    'Developer for Web & BI',
+    'Adept in Next.js, Firebase, and Database Warehousing',
   ],
   social: {
     linkedin: 'https://www.linkedin.com/in/dongningli/',
@@ -78,6 +72,8 @@ const skills = [
 ]
 
 const contact = {
+  description:
+    'I cherish teamwork as a catalyst for collective growth and achievement',
   email: 'et123.woo@gmail.com',
 }
 

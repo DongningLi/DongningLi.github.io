@@ -15,9 +15,9 @@ import MenuItem from '@mui/material/MenuItem'
 import { useRouter } from 'next/navigation'
 
 //internal import
-import { experience, skills, contact } from '@/data/profiles'
+import { projects, experience, skills, contact } from '@/data/profiles'
 
-function Navbar_mui() {
+function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null)
   const router = useRouter()
 
@@ -87,6 +87,16 @@ function Navbar_mui() {
                 <Typography textAlign="center">About Me</Typography>
               </MenuItem>
 
+              {projects.length && (
+                <MenuItem
+                  onClick={() => {
+                    router.push('/Projects')
+                  }}
+                >
+                  <Typography textAlign="center">Projects</Typography>
+                </MenuItem>
+              )}
+
               {experience.length && (
                 <MenuItem
                   onClick={() => {
@@ -145,6 +155,17 @@ function Navbar_mui() {
               About Me
             </Button>
 
+            {projects.length && (
+              <Button
+                onClick={() => {
+                  router.push('/Projects')
+                }}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+                Projects
+              </Button>
+            )}
+
             {experience.length && (
               <Button
                 onClick={() => {
@@ -183,4 +204,4 @@ function Navbar_mui() {
     </AppBar>
   )
 }
-export default Navbar_mui
+export default Navbar

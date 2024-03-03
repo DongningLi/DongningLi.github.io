@@ -1,10 +1,8 @@
-import Navbar from '../components/Navbar'
 import { contact } from '../../data/profiles'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import EmailIcon from '@mui/icons-material/Email'
 import { about } from '@/data/profiles'
-import Spacer from '../components/Spacer'
 import '@/styles/Contact.css'
 
 const Contact = () => {
@@ -13,8 +11,6 @@ const Contact = () => {
 
   return (
     <section className="section contact center" id="contact">
-      <Navbar />
-      {Spacer(1)}
       <div className="about__contact center">
         <a href={`mailto:${contact.email}`} target="_blank" rel="noreferrer">
           <EmailIcon fontSize="large" />
