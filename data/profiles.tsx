@@ -6,6 +6,7 @@ const about = {
     'Adept in Next.js, Firebase, and Database Warehousing',
   ],
   social: {
+    resume: './files/resume.pdf',
     linkedin: 'https://www.linkedin.com/in/dongningli/',
     github: 'https://github.com/DongningLi',
   },

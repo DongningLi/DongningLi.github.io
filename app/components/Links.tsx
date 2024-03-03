@@ -2,6 +2,7 @@ import { contact } from '../../data/profiles'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import EmailIcon from '@mui/icons-material/Email'
+import AttachFileIcon from '@mui/icons-material/AttachFile'
 import { about } from '@/data/profiles'
 import '@/styles/Contact.css'
 
@@ -18,6 +19,17 @@ const Contact = () => {
 
         {social && (
           <>
+            {social.github && (
+              <a
+                href={social.resume}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Resume"
+                className="link link--icon"
+              >
+                <AttachFileIcon fontSize="large" />
+              </a>
+            )}
             {social.github && (
               <a
                 href={social.github}
