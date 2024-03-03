@@ -14,7 +14,7 @@ const Projects = () => {
     <div id="top" className="app">
       <Navbar_mui />
       {Spacer(1)}
-      <h2 className="section__title">My Projects</h2>
+
       <div className="projects__grid">
         {projects.map((project) => (
           <ProjectCard {...project} />

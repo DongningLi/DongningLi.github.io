@@ -3,7 +3,6 @@ import { StyledEngineProvider } from '@mui/material/styles'
 import Navbar from './components/Navbar'
 import About from './components/About'
 import Footer from './components/Footer'
-import Projects from './Projects/page'
 
 import '../styles/index.css'
 import '../styles/App.css'

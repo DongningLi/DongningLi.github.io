@@ -1,7 +1,21 @@
 'use client'
+
+//external import
 import uniqid from 'uniqid'
+import Box from '@mui/material/Box'
+import Card from '@mui/material/Card'
+import CardContent from '@mui/material/CardContent'
+import CardMedia from '@mui/material/CardMedia'
+import IconButton from '@mui/material/IconButton'
+import Typography from '@mui/material/Typography'
+import SkipPreviousIcon from '@mui/icons-material/SkipPrevious'
+import PlayArrowIcon from '@mui/icons-material/PlayArrow'
+import SkipNextIcon from '@mui/icons-material/SkipNext'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import Image from 'next/image'
+import { Button, CardActionArea, CardActions } from '@mui/material'
+
+//internal import
 import { useRouter } from 'next/navigation'
 import '@/styles/ProjectCard.css'
 
@@ -24,35 +38,10 @@ function ProjectCard(project: projectType) {
   }
 
   return (
-    <div className="project">
-      <div>
-        {project.thumbnail && (
-          <Image
-            className="project__thumbnail"
-            src={project.thumbnail[0]}
-            alt="thumbnail"
-            width={250}
-            height={150}
-            onClick={() => {
-              router.push(
-                '/ProjectDetail' + '?' + createQueryString('name', project.name)
-              )
-            }}
-          />
-        )}
-
-        {project.name && (
-          <h3
-            className="project__thumbnailName"
-            onClick={() => {
-              router.push(
-                '/ProjectDetail' + '?' + createQueryString('name', project.name)
-              )
-            }}
-          >
-            {project.name}
-          </h3>
-        )}
+    <Card className="projectCard-div">
+      <CardMedia component="img" height="500vh" image={project.thumbnail[0]} />
+      <CardContent>
+        <h2>{project.name}</h2>
 
         {project.description && (
           <div className="project__description paragraph__list">
@@ -61,9 +50,7 @@ function ProjectCard(project: projectType) {
             ))}
           </div>
         )}
-      </div>
 
-      <div>
         {project.stack && (
           <ul className="project__stack">
             {project.stack.map((item: string) => (
@@ -74,19 +61,30 @@ function ProjectCard(project: projectType) {
           </ul>
         )}
 
-        {project.sourceCode && (
-          <a
-            href={project.sourceCode}
-            target="_blank"
-            rel="noreferrer"
-            aria-label="source code"
-            className="link link--icon"
-          >
-            <GitHubIcon />
-          </a>
-        )}
-      </div>
-    </div>
+        <Button
+          size="small"
+          color="primary"
+          className="viewMore"
+          onClick={() => {
+            router.push(
+              '/ProjectDetail' + '?' + createQueryString('name', project.name)
+            )
+          }}
+        >
+          View More
+        </Button>
+        <Button
+          size="small"
+          color="primary"
+          className="viewCode"
+          href={project.sourceCode}
+          target="_blank"
+          rel="noreferrer"
+        >
+          VIEW CODE
+        </Button>
+      </CardContent>
+    </Card>
   )
 }
 
