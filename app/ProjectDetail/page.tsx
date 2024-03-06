@@ -87,6 +87,14 @@ function Search() {
             </Carousel>
           )}
 
+          {project.videoThumbnail && (
+            <div>
+              <video controls width={500} height={500}>
+                <source src={project.videoThumbnail[1]} type="video/mp4" />
+              </video>
+            </div>
+          )}
+
           {project.name && (
             <h1 className="project__detail__name">{project.name}</h1>
           )}

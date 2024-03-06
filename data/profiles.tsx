@@ -53,11 +53,54 @@ const projects = [
     ],
     name: 'Management System',
     description: [
-      'Management system, including login, form and CRUD operations, based on SSH2 ',
+      'Management system, including login, form and CRUD operations, based on SSH2',
       'Undegraduate graduation thesis',
     ],
     stack: ['SSH2', 'Javascript', 'JAVA'],
     sourceCode: 'https://github.com/DongningLi/bachelorGraduation/tree/master',
+  },
+  {
+    thumbnail: [
+      './networkProgramming/npm1.png',
+      './networkProgramming/npm2.png',
+      './networkProgramming/npm3.png',
+    ],
+    thumbnailDescription: ['Result', 'Message sending', 'Peer witness'],
+    name: 'Gossip Messages',
+    description: [
+      'Create TCP and UDP servers to receive messages from the clients',
+      'University Project',
+    ],
+    stack: ['Java', 'ASN1', 'bash'],
+    sourceCode:
+      'https://github.com/DongningLi/networkProgramming/tree/master/NPMilstone5FINALLY',
+  },
+  {
+    videoThumbnail: [
+      './matlab/findPathAndAnimation-1.png',
+      './matlab/findPathAndAnimation-2.mp4',
+    ],
+    videoThumbnailDescription: ['Path finding animation'],
+    name: 'Find Path and Animation',
+    description: [
+      'Find path through obstacles and animate the route',
+      'University Porject',
+    ],
+    stack: ['Matlab', 'Path Finding', 'Animation'],
+    sourceCode:
+      'https://github.com/DongningLi/Computer-Graphic/tree/master/animation',
+  },
+  {
+    videoThumbnail: [
+      './matlab/faceMorphing-1.png',
+      './matlab/faceMorphing-2.mp4',
+    ],
+    videoThumbnailDescription: ['Face Morphing Video'],
+    name: 'Face Morphing',
+    description: ['Morph face using Matlab', 'University Porject'],
+    stack: ['Matlab', 'Face Morphing'],
+    sourceCode:
+      'https://github.com/DongningLi/Computer-Graphic/tree/master/morph2pics',
   },
 ]
 

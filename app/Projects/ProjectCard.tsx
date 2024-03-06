@@ -10,6 +10,7 @@ import '@/styles/ProjectCard.css'
 
 interface projectType {
   thumbnail: string[]
+  videoThumbnail: string[]
   name: string
   description: string[]
   stack: string[]
@@ -34,19 +35,37 @@ function ProjectCard(project: projectType) {
         borderRadius: '10px',
       }}
     >
-      <Box
-        sx={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundImage: `url(${project.thumbnail[0]})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          opacity: 0.2,
-        }}
-      />
+      {project.thumbnail && (
+        <Box
+          sx={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundImage: `url(${project.thumbnail[0]})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.2,
+          }}
+        />
+      )}
+
+      {project.videoThumbnail && (
+        <Box
+          sx={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundImage: `url(${project.videoThumbnail[0]})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.2,
+          }}
+        />
+      )}
       <CardContent
         className="projectCardText"
         sx={{
@@ -58,7 +77,11 @@ function ProjectCard(project: projectType) {
           <span className="project-tag-stack">
             {project.stack.map((item: string) => (
               <p key={uniqid()} className="project__stack-item">
-                <Button variant="outlined" color="secondary" className='projectCard-item-btn'>
+                <Button
+                  variant="outlined"
+                  color="secondary"
+                  className="projectCard-item-btn"
+                >
                   {item}
                 </Button>
               </p>
