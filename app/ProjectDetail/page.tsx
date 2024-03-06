@@ -40,7 +40,7 @@ function Search() {
       />
       <div className="project__detail">
         <div>
-          {project.thumbnail && (
+          {project.thumbnail.length > 0 && (
             <Carousel>
               <div>
                 <Image
@@ -87,7 +87,7 @@ function Search() {
             </Carousel>
           )}
 
-          {project.videoThumbnail && (
+          {project.videoThumbnail.length > 0 && (
             <div>
               <video controls width={500} height={500}>
                 <source src={project.videoThumbnail[1]} type="video/mp4" />

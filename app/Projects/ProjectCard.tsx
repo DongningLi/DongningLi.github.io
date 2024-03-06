@@ -35,7 +35,7 @@ function ProjectCard(project: projectType) {
         borderRadius: '10px',
       }}
     >
-      {project.thumbnail && (
+      {project.thumbnail.length > 0 && (
         <Box
           sx={{
             position: 'absolute',
@@ -51,7 +51,7 @@ function ProjectCard(project: projectType) {
         />
       )}
 
-      {project.videoThumbnail && (
+      {project.videoThumbnail.length > 0 && (
         <Box
           sx={{
             position: 'absolute',

@@ -16,6 +16,7 @@ const projects = [
       './images/portfolio2.png',
       './images/portfolio3.png',
     ],
+    videoThumbnail: [],
     thumbnailDescription: ['Index Page', 'Projects Page', 'Experience Page'],
     name: 'Portfolio',
     description: [
@@ -31,6 +32,7 @@ const projects = [
       './images/vr1family-screenshot2.png',
       './images/vr1family-screenshot3.png',
     ],
+    videoThumbnail: [],
     thumbnailDescription: ['Admin Page', 'Form Page', 'Detail Page'],
     name: 'VR1Family',
     description: [
@@ -46,6 +48,7 @@ const projects = [
       './images/bachelorSystem2.png',
       './images/bachelorSystem3.png',
     ],
+    videoThumbnail: [],
     thumbnailDescription: [
       'Index Page',
       'Search Information Page',
@@ -65,6 +68,7 @@ const projects = [
       './networkProgramming/npm2.png',
       './networkProgramming/npm3.png',
     ],
+    videoThumbnail: [],
     thumbnailDescription: ['Result', 'Message sending', 'Peer witness'],
     name: 'Gossip Messages',
     description: [
@@ -76,11 +80,12 @@ const projects = [
       'https://github.com/DongningLi/networkProgramming/tree/master/NPMilstone5FINALLY',
   },
   {
+    thumbnail: [],
     videoThumbnail: [
       './matlab/findPathAndAnimation-1.png',
       './matlab/findPathAndAnimation-2.mp4',
     ],
-    videoThumbnailDescription: ['Path finding animation'],
+    thumbnailDescription: ['Path finding animation'],
     name: 'Find Path and Animation',
     description: [
       'Find path through obstacles and animate the route',
@@ -91,11 +96,12 @@ const projects = [
       'https://github.com/DongningLi/Computer-Graphic/tree/master/animation',
   },
   {
+    thumbnail: [],
     videoThumbnail: [
       './matlab/faceMorphing-1.png',
       './matlab/faceMorphing-2.mp4',
     ],
-    videoThumbnailDescription: ['Face Morphing Video'],
+    thumbnailDescription: ['Face Morphing Video'],
     name: 'Face Morphing',
     description: ['Morph face using Matlab', 'University Porject'],
     stack: ['Matlab', 'Face Morphing'],
