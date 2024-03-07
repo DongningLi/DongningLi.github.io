@@ -40,7 +40,7 @@ const contact = {
 const experience = [
   {
     position: 'Front-end Developer',
-    period: 'Nov 2023 - Now',
+    period: 'Nov 2023 - Feb 2024',
     Tasks: [
       {
         task: 'Implement availability components hook and documentations',
