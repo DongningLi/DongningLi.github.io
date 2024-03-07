@@ -112,16 +112,24 @@ const projects = [
 
 const skills = [
   'Next.js',
-  'HTML',
-  'CSS',
-  'SASS',
-  'JavaScript',
-  'Firebase',
-  'BI System',
-  'Database',
   'PHP',
-  'Git',
-  'Project Management',
+  'React',
+  'JS',
+  'Java',
+  'Python',
+  'Oracle',
+  'SQL',
+  'SAP BI',
+  'GitHub',
+  'Jira',
+  'Django',
+  'Confluence',
+  'Figma',
+  'Firewall',
+  'IDS',
+  'IPS',
+  'Disaster  Recovery',
+  'Network Security',
 ]
 
 const contact = {
