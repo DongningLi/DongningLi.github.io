@@ -1,7 +1,7 @@
 import Navbar_mui from '../components/Navbar'
 import Spacer from '../components/Spacer'
 import ProjectCard from './ProjectCard'
-import { projects } from '@/data/profiles'
+import { projects } from '@/data/projects'
 
 import '@/styles/Projects.css'
 import '@/styles/index.css'

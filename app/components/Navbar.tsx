@@ -15,7 +15,8 @@ import MenuItem from '@mui/material/MenuItem'
 import { useRouter } from 'next/navigation'
 
 //internal import
-import { projects, experience } from '@/data/profiles'
+import { experience } from '@/data/profiles'
+import { projects } from '@/data/projects'
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null)
