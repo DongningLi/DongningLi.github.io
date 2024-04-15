@@ -97,6 +97,19 @@ const projects = [
     sourceCode:
       'https://github.com/DongningLi/Computer-Graphic/tree/master/morph2pics',
   },
+  {
+    thumbnail: [
+      './FreeCode/catFace.png',
+      './FreeCode/catFace.png',
+      './FreeCode/catFace.png',
+    ],
+    videoThumbnail: [],
+    thumbnailDescription: ['Responsive Web Desgin', 'FreeCode Projects'],
+    name: 'FreeCode Projects',
+    description: ['A collection of learning projects from FreeCode'],
+    stack: ['responsive', 'web design', 'html', 'css'],
+    sourceCode: 'https://github.com/DongningLi/bachelorGraduation/tree/master',
+  },
 ]
 
 export { projects }
