@@ -104,11 +104,13 @@ const projects = [
       './FreeCode/catFace.png',
     ],
     videoThumbnail: [],
-    thumbnailDescription: ['Responsive Web Desgin', 'FreeCode Projects'],
-    name: 'FreeCode Projects',
-    description: ['A collection of learning projects from FreeCode'],
-    stack: ['responsive', 'web design', 'html', 'css'],
-    sourceCode: 'https://github.com/DongningLi/bachelorGraduation/tree/master',
+    thumbnailDescription: ['CatFace', 'CatFace', 'CatFace'],
+    name: 'FreeCode Projects: Responsive Web Desgin',
+    description: [
+      'A collection of learning projects from FreeCode: Responsive Web Design',
+    ],
+    stack: ['responsive web design', 'html', 'css'],
+    sourceCode: 'https://github.com/DongningLi/FreeCode-project',
   },
 ]
 
