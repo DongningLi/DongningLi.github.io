@@ -33,6 +33,20 @@ const projects = [
   },
   {
     thumbnail: [
+      './FreeCode/apiImage/index.png',
+      './FreeCode/apiImage/timeStamp.png',
+      './FreeCode/apiImage/Exercise-tracker.png',
+    ],
+    videoThumbnail: [],
+    thumbnailDescription: ['Index Page', 'Time Stamp', 'Excercise Tracker'],
+    name: 'FreeCode Projects: Back End Development and APIs',
+    description: ['Write back end apps with Node.js and npm'],
+    stack: ['MongoDB', 'API Development', 'Node.js'],
+    sourceCode:
+      'https://github.com/DongningLi/FreeCode-project/tree/main/Backend%20API',
+  },
+  {
+    thumbnail: [
       './images/bachelorSystem1.png',
       './images/bachelorSystem2.png',
       './images/bachelorSystem3.png',
@@ -110,7 +124,8 @@ const projects = [
       'A collection of learning projects from FreeCode: Responsive Web Design',
     ],
     stack: ['responsive web design', 'html', 'css'],
-    sourceCode: 'https://github.com/DongningLi/FreeCode-project',
+    sourceCode:
+      'https://github.com/DongningLi/FreeCode-project/tree/main/catFace',
   },
 ]
 
