@@ -11,14 +11,16 @@ const about = {
 
 const skills = [
   'Next.js',
-  'PHP',
+  'Tailwind CSS',
   'React',
   'JS',
   'Java',
   'Python',
   'Oracle',
   'SQL',
-  'SAP BI',
+  'MongoDB',
+  'SAP',
+  'BI',
   'GitHub',
   'Jira',
   'Django',

@@ -39,7 +39,7 @@ const projects = [
     ],
     videoThumbnail: [],
     thumbnailDescription: ['Index Page', 'Time Stamp', 'Excercise Tracker'],
-    name: 'FreeCode Projects: Back End Development and APIs',
+    name: 'freeCodeCamp Projects: Back End Development and APIs',
     description: ['Write back end apps with Node.js and npm'],
     stack: ['MongoDB', 'API Development', 'Node.js'],
     sourceCode:
@@ -119,7 +119,7 @@ const projects = [
     ],
     videoThumbnail: [],
     thumbnailDescription: ['CatFace', 'CatFace', 'CatFace'],
-    name: 'FreeCode Projects: Responsive Web Desgin',
+    name: 'freeCodeCamp Projects: Responsive Web Desgin',
     description: [
       'A collection of learning projects from FreeCode: Responsive Web Design',
     ],
