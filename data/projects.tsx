@@ -17,6 +17,27 @@ const projects = [
   },
   {
     thumbnail: [
+      './images/fileProcess1.png',
+      './images/fileProcess2.png',
+      './images/fileProcess3.png',
+    ],
+    videoThumbnail: [],
+    thumbnailDescription: [
+      'Index Page',
+      'Display type and contents of file',
+      'Save data to MongoDB',
+    ],
+    name: 'CSV File Process',
+    description: [
+      'CSV file CRUD and download process',
+      'With Django, Python and Next.js',
+      'Focus on massive file data cleaning',
+    ],
+    stack: ['Next.js', 'Django', 'Python', 'MongoDB'],
+    sourceCode: 'https://github.com/DongningLi/RAI-ass-frontend',
+  },
+  {
+    thumbnail: [
       './images/vr1family-screenshot1.png',
       './images/vr1family-screenshot2.png',
       './images/vr1family-screenshot3.png',
