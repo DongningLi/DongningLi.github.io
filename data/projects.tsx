@@ -29,8 +29,7 @@ const projects = [
     ],
     name: 'CSV File Process',
     description: [
-      'CSV file CRUD and download process',
-      'With Django, Python and Next.js',
+      'CSV file CRUD and download process with Django, Python and Next.js',
       'Focus on massive file data cleaning',
     ],
     stack: ['Next.js', 'Django', 'Python', 'MongoDB'],

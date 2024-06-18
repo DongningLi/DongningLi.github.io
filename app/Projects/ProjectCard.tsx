@@ -91,9 +91,7 @@ function ProjectCard(project: projectType) {
 
         {project.description && (
           <div className="project__description paragraph__list">
-            {project.description.map((item: string) => (
-              <h5 key={uniqid()}>{item}</h5>
-            ))}
+            <h5 key={uniqid()}>{project.description[0]}</h5>
           </div>
         )}
 
